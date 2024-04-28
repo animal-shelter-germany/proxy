@@ -5,3 +5,10 @@ services:
     ports:
       - '8089:8089'
     image: nginx:latest
+    networks:
+      - animal-shelter
+
+networks:
+  animal-shelter:
+    name: animal-shelter
+    external: true
