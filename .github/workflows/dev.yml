@@ -8,9 +8,9 @@ jobs:
   build_and_deploy:
     runs-on: self-hosted
     env:
-      PORT: 8090
+      HOST_PORT: 8090
       CONTAINER_NAME: animal-shelter-proxy-dev
-      NETWORK: animal-shelter
+      NETWORK: animal-shelter-dev
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2
