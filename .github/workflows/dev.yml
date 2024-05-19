@@ -1,0 +1,16 @@
+name: Server Deploy Dev
+
+on: 
+  push:
+    branches: [dev]
+
+jobs:
+  build_and_deploy:
+    runs-on: self-hosted
+    env:
+      PORT: 8090
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+      - name: Build Images
+        run: docker compose up -d --build
