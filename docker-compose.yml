@@ -1,7 +1,11 @@
 version: "3.8"
 services:
   animal-shelter-proxy:
-    build: .
+    build:
+      context: .
+      args:
+        FRONTEND: ${FRONTEND}
+        BACKEND: ${BACKEND}
     container_name: ${CONTAINER_NAME}
     ports:
       - '${PORT}:8089'

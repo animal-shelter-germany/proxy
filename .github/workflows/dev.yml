@@ -11,6 +11,8 @@ jobs:
       PORT: 8089
       CONTAINER_NAME: animal-shelter-proxy-dev
       NETWORK: animal-shelter-dev
+      FRONTEND: http://animal-shelter-frontend-dev:3000
+      BACKEND: http://animal-shelter-backend-dev:8080
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2
