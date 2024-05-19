@@ -2,14 +2,14 @@ version: "3.8"
 services:
   animal-shelter-proxy:
     build: .
-    container_name: animal-shelter-proxy
+    container_name: ${CONTAINER_NAME}
     ports:
-      - '8090:8089'
+      - '${PORT}:8089'
     image: nginx:latest
     networks:
       - animal-shelter
 
 networks:
   animal-shelter:
-    name: animal-shelter
+    name: ${NETWORK}
     external: true

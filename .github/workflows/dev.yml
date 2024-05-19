@@ -8,11 +8,11 @@ jobs:
   build_and_deploy:
     runs-on: self-hosted
     env:
-      PORT: 8099
+      PORT: 8089
       CONTAINER_NAME: animal-shelter-proxy-dev
       NETWORK: animal-shelter-dev
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2
       - name: Build Images
-        run: docker compose -f docker-compose-dev.yml up -d --build
+        run: docker compose up -d --build
