@@ -10,6 +10,7 @@ jobs:
     env:
       PORT: 8090
       CONTAINER_NAME: animal-shelter-proxy-dev
+      NETWORK: animal-shelter
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2

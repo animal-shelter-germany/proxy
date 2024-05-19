@@ -11,6 +11,5 @@ services:
 
 networks:
   animal-shelter:
-    name: animal-shelter
+    name: ${NETWORK}
     external: true
-    
