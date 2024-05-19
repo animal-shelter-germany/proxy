@@ -9,6 +9,7 @@ jobs:
     runs-on: self-hosted
     env:
       PORT: 8090
+      CONTAINER_NAME: animal-shelter-proxy-dev
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2
