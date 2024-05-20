@@ -8,8 +8,12 @@ services:
     image: nginx:latest
     networks:
       - animal-shelter
+      - animal-shelter-dev
 
 networks:
   animal-shelter:
     name: animal-shelter
+    external: true
+  animal-shelter-dev:
+    name: animal-shelter-dev
     external: true
