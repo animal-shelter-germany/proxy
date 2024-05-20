@@ -1,8 +1,8 @@
 version: "3.8"
 services:
-  animal-shelter-proxy:
+  animal-shelter-proxy-dev:
     build:
-      context: ../dockerfile-dev
+      context: ./dockerfile-dev
     container_name: animal-shelter-proxy-dev
     ports:
       - '8089:8089'
