@@ -8,7 +8,6 @@ services:
     image: nginx:latest
     networks:
       - animal-shelter
-      - animal-shelter-dev
 
 networks:
   animal-shelter:
